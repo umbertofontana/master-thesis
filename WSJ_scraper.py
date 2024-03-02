@@ -17,7 +17,7 @@ import openai
 from openai import ChatCompletion, Completion
 
 system_message = f"Generate 10 to 20 single words related to the company associated to the stock ticker that you will be given. They will be used to select news articles that contain those keywords, in order to then feed those articles to a language model for financial forecasting; thus, words must be as unambiguous as possible, and technical. You are also given a short summary of the company, in order to chose better related words. Use the format: word 1,word 2,word 3,... without any additional output other than the words. Include the company name and the word {TICKER}. For each word, include it as capitalized and as all lower caps."
-openai.api_key="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" #RICORDA DI COPRIRLO NELLA TESI
+openai.api_key="REDACTED"
 
 chat = ChatCompletion.create(
     model="gpt-4-1106-preview",
